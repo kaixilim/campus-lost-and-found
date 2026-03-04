@@ -3,6 +3,9 @@
 A web-based Lost & Found system for Quest International University.
 Built with Node.js, Express, MySQL, HTML5, CSS3, and JavaScript.
 
+## Live Demo
+https://campus-lost-and-found-production-cb6f.up.railway.app
+
 ## Features
 - Report lost and found items
 - View and filter items by category or keyword
@@ -103,3 +106,6 @@ A default user account is available for testing:
 - All database queries use parameterized statements to prevent SQL injection
 - Session authentication is required to access all pages
 - Only the original reporter can delete their own report (403 Forbidden otherwise)
+
+## Deployment
+Live URL: https://campus-lost-and-found-production-cb6f.up.railway.app
