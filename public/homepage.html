@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage – Campus Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="home-nav">
+    <div class="nav-brand">🔍 Lost & Found</div>
+    <div class="home-nav-center">
+        <a href="homepage.html" class="active">Home</a>
+        <a href="lost.html">Lost Items</a>
+        <a href="found.html">Found Items</a>
+        <a href="lostForm.html">Report Lost</a>
+        <a href="foundForm.html">Report Found</a>
+    </div>
+    <button onclick="logout()" class="logout-btn">Logout</button>
+</nav>
+
+<div class="page-wrapper">
+    <div class="hero">
+        <h1>Campus Lost & Found System</h1>
+        <p>Report lost items, browse found items, and help reunite belongings with their owners.</p>
+        <div class="hero-buttons">
+            <a href="lostForm.html" class="btn-primary">Report Lost Item</a>
+            <a href="foundForm.html" class="btn-secondary">Report Found Item</a>
+        </div>
+    </div>
+
+    <h2>Recent Reports</h2>
+    <div class="filter-bar">
+        <input id="searchInput" type="text" placeholder="Search all items…" />
+        <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Document">Document</option>
+            <option value="Bag">Bag</option>
+            <option value="Keys">Keys</option>
+            <option value="Wallet">Wallet</option>
+            <option value="Others">Others</option>
+        </select>
+    </div>
+
+    <div id="items" class="items-grid"></div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

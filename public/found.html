@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found Items – Campus Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="home-nav">
+    <div class="nav-brand">🔍 Lost & Found</div>
+    <div class="home-nav-center">
+        <a href="homepage.html">Home</a>
+        <a href="lost.html">Lost Items</a>
+        <a href="found.html" class="active">Found Items</a>
+        <a href="lostForm.html">Report Lost</a>
+        <a href="foundForm.html">Report Found</a>
+    </div>
+    <button onclick="logout()" class="logout-btn">Logout</button>
+</nav>
+
+<div class="page-wrapper">
+    <h1>📦 Found Items</h1>
+    <p class="page-subtitle">Items that have been found and handed in.</p>
+
+    <div class="filter-bar">
+        <input id="searchInput" type="text" placeholder="Search by title, description, location…" />
+        <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Document">Document</option>
+            <option value="Bag">Bag</option>
+            <option value="Keys">Keys</option>
+            <option value="Wallet">Wallet</option>
+            <option value="Others">Others</option>
+        </select>
+    </div>
+
+    <div id="items" data-status="Found" class="items-grid"></div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
